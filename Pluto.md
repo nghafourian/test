@@ -31,11 +31,34 @@ tar xvf pluto-4.3.tar.gz
 ````
 * Export the Pluto directory path:
   * open the `.bashrc` file using `gedit` (or e.g. `vim`)
-  ```sh
-  sudo gedit ~/.bashrc 
-  ````
-  * go to the end of the file and paste the following line. Then save and close the file.
-  ```sh
-   export PLUTO_DIR=/home/user/PLUTO
-  ````
+   ```sh
+   sudo gedit ~/.bashrc 
+   ````
+  * go to the end of the file and paste the following line and replace `/home/user/PLUTO` with the address of the `pluto` directory on your own system. _(you may check the directory address by opening a terminal window in that directory and run the command `pwd` in the terminal.)_ Then save and close the file.
+   ```sh
+    export PLUTO_DIR=/home/user/PLUTO
+   ````
+  * now type the follwing command in the terminal and press `Enter`.
+   ```sh
+    . ~/.bashrc
+   ````
+   ```sh
+    source ~/.bashrc
+   ````
+The `pluto` directory is now known for your system. So, you can continue to use the code. Check this example to make sure it works.
+
+Change directory (`cd`) to the example's directory and follow
+```sh
+cd $PLUTO_DIR/Test_Problems/HD/Sod
+````
+```sh
+cp definitions_01.h definitions.h
+````
+```sh
+cp pluto_01.ini pluto.ini
+````
+Run the `python` script
+```sh
+python $PLUTO_DIR/setup.py
+````
   
