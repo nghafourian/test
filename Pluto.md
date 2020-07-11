@@ -81,7 +81,7 @@ python $PLUTO_DIR/setup.py
  ./pluto
  ````
   At this point, PLUTO reads the initialization file pluto.ini and starts integrating. The run should take a few seconds (or less) and the integration log should be dumped to screen.
-* you can now plot the results using `gnuplot`.  type `gnuplot` and enter its environment. Then type
+* you can now plot the results using `gnuplot`.  Type `gnuplot` in the terminal and enter its environment. Then type
 ```sh
  plot "data.0001.dbl" bin array=400:400:400 form="%double" ind 0
 ````
