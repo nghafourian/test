@@ -1,5 +1,5 @@
 # Pluto
-## A simple guide for installation
+## A simple guide for installation on GNU/Linux OS
 
 Download the source code from [Pluto's main page](http://plutocode.ph.unito.it/download.html). You need to provide your information and click submit for the `.tar.gz` source file start downloading. The minimum prerequisites to use this code are `C Compiler`, `GNU make`, and `Python`.
 Open a terminal by using `Alt+Ctrl+t` and type
@@ -22,3 +22,4 @@ If not, you can install python2 using
 ```sh
 sudo apt install python-minimal
 ````
+Now that you have the basic prerequisites for the `Pluto` code installed, you may proceed to installation of the code. See the  [documentiation file](http://plutocode.ph.unito.it/userguide.pdf) for more details. Follow the steps on page 6 of the user-guide.  
