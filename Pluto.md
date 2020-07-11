@@ -22,4 +22,20 @@ If not, you can install python2 using
 ```sh
 sudo apt install python-minimal
 ````
-Now that you have the basic prerequisites for the `Pluto` code installed, you may proceed to installation of the code. See the  [documentiation file](http://plutocode.ph.unito.it/userguide.pdf) for more details. Follow the steps on page 6 of the user-guide.  
+Now that you have the basic prerequisites for the `Pluto` code installed, you may proceed to installation of the code. See the  [documentiation file](http://plutocode.ph.unito.it/userguide.pdf) for more details. In the following, we will see the installation method explained on page 6 of the user-guide.  
+
+Copy the file `pluto-4.3.tar.gz` that you previously downloaded to your home folder. Then open a terminal and follow these steps:
+* unzip the file:
+```sh
+tar xvf pluto-4.3.tar.gz
+````
+* Export the Pluto directory path:
+  * open the `.bashrc` file using `gedit` (or e.g. `vim`)
+  ```sh
+  sudo gedit ~/.bashrc 
+  ````
+  * go to the end of the file and paste the following line. Then save and close the file.
+  ```sh
+   export PLUTO_DIR=/home/user/PLUTO
+  ````
+  
