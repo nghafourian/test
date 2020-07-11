@@ -1,5 +1,5 @@
 # Pluto
-## A simple guide for installation on GNU/Linux OS
+## A simple guide for installation on GNU/Linux OS (ubuntu based distros)
 
 Download the source code from [Pluto's main page](http://plutocode.ph.unito.it/download.html). You need to provide your information and click submit for the `.tar.gz` source file start downloading. The minimum prerequisites to use this code are `C Compiler`, `GNU make`, and `Python`.
 Open a terminal by using `Alt+Ctrl+t` and type
@@ -22,7 +22,7 @@ _note that everything before the `$` sign shows the user and directory address t
 
 If `python2` is not installed on your system, you can install it using
 ```sh
-sudo apt install python-minimal
+sudo apt-get install python-minimal
 ````
 
 Before continuing to the installation of `pluto`, install `gnuplot`. We will need it later to plot our results. In your terminal window type 
@@ -36,7 +36,7 @@ Now that you have the basic prerequisites for the `Pluto` code installed, you ma
 Copy the file `pluto-4.3.tar.gz` that you previously downloaded to your home folder. Then open a terminal and follow these steps:
 * unzip the file:
 ```sh
-tar xvf pluto-4.3.tar.gz
+tar zxvf pluto-4.3.tar.gz
 ````
 * Export the Pluto directory path:
   * open the `.bashrc` file using `gedit` (or e.g. `vim`). _if you do not have `gedit` installed, install it by command `sudo apt-get install gedit`and continue_
@@ -47,13 +47,16 @@ tar xvf pluto-4.3.tar.gz
    ```sh
     export PLUTO_DIR=/home/user/PLUTO
    ````
-  * now type the follwing commands in the terminal and press `Enter`.
-   ```sh
-    . ~/.bashrc
-   ````
+  * now type one of the follwing commands in the terminal and press `Enter`.
    ```sh
     source ~/.bashrc
    ````
+   or   
+   
+   ```sh
+    . ~/.bashrc
+   ````
+   
 The `pluto` directory is now known for your system. So, you can continue to use the code. Check this example to make sure it works.
 
 * Change directory (`cd`) to the example's directory and follow the next commands
