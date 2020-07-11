@@ -31,7 +31,7 @@ sudo apt-get install gnuplot
 ````
 provide your password if needed. After the installation you can enter the `gnuplot` envirnoment by simply typing `gnuplot` in the terminal. you can exit by typing `q` and pressing `Enter`.
 
-Now that you have the basic prerequisites for the `Pluto` code installed, you may proceed to installation of the code. See the  [documentiation file](http://plutocode.ph.unito.it/userguide.pdf) for more details. In the following, we will see the installation method explained on page 6 of the user-guide.  
+Now that you have the basic prerequisites for the `Pluto` code installed, you may proceed to installation of the code. See the documentiation file ([user-guide](http://plutocode.ph.unito.it/userguide.pdf)) for more details. In the following, we will see the installation method explained on page 6 of the user-guide.  
 
 Copy the file `pluto-4.3.tar.gz` that you previously downloaded to your home folder. Then open a terminal and follow these steps:
 * unzip the file:
