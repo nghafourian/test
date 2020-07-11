@@ -22,6 +22,13 @@ If not, you can install python2 using
 ```sh
 sudo apt install python-minimal
 ````
+
+Before continuing to the installation of `pluto`, install `gnuplot`. We will need it to plot our results. In your terminal window type 
+```sh
+sudo apt-get install gnuplot
+````
+provide your password if needed. After the installation you can enter the `gnuplot` envirnoment by simply typing `gnuplot` in the terminal. you can exit by typing `q` and pressing `Enter`.
+
 Now that you have the basic prerequisites for the `Pluto` code installed, you may proceed to installation of the code. See the  [documentiation file](http://plutocode.ph.unito.it/userguide.pdf) for more details. In the following, we will see the installation method explained on page 6 of the user-guide.  
 
 Copy the file `pluto-4.3.tar.gz` that you previously downloaded to your home folder. Then open a terminal and follow these steps:
@@ -39,7 +46,8 @@ tar xvf pluto-4.3.tar.gz
     export PLUTO_DIR=/home/user/PLUTO
    ````
   * now type the follwing command in the terminal and press `Enter`.
-   ```sh
+   ```shand select “Setup problem” from the main menu, see Fig. 1.2. You can choose (by pressing Enter)
+or modify the default setting using the arrow keys.
     . ~/.bashrc
    ````
    ```sh
@@ -47,7 +55,7 @@ tar xvf pluto-4.3.tar.gz
    ````
 The `pluto` directory is now known for your system. So, you can continue to use the code. Check this example to make sure it works.
 
-Change directory (`cd`) to the example's directory and follow
+* Change directory (`cd`) to the example's directory and follow
 ```sh
 cd $PLUTO_DIR/Test_Problems/HD/Sod
 ````
@@ -57,8 +65,23 @@ cp definitions_01.h definitions.h
 ```sh
 cp pluto_01.ini pluto.ini
 ````
-Run the `python` script
+* Run the `python` script
 ```sh
 python $PLUTO_DIR/setup.py
 ````
-  
+ and select “Setup problem” from the main menu, see Fig. 1.2 of [documentiation file](http://plutocode.ph.unito.it/userguide.pdf). You can choose (by pressing Enter) or modify the default setting using the arrow keys.  
+* Continue pressing `Enter` and choosing your desired setup options. Once you return to the main menu, select `Change makefile`, choose a suitable makefile (for this basic installation in Linux choose `Linux.gcc.defs` option) and press enter.
+* Exit from the main menu (“Quit” or press ’q’) and type the following to compile the code. make
+ ```sh
+ make
+ ````
+* Make sure you are in the `$PLUTO_DIR/Test_Problems/HD/Sod` directory. You can now run the code by typing
+ ```sh
+ ./pluto
+ ````
+  At this point, PLUTO reads the initialization file pluto.ini and starts integrating. The run should take a few seconds (or less) and the integration log should be dumped to screen.
+* you can now plot the results using `gnuplot`.  type `gnuplot` and enter its environment. Then type
+```sh
+ plot "data.0001.dbl" bin array=400:400:400 form="%double" ind 0
+````
+You should now see the results if everything is working fine.
