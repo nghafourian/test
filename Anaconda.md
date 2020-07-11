@@ -7,4 +7,3 @@ This tutorial for installing Anaconda is written based on [Anaconda Documentatio
 To install Anaconda for **Python 3.7**, enter the following command in a terminal:
 > 
 
-
