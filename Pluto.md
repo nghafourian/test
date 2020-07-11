@@ -56,7 +56,7 @@ tar xvf pluto-4.3.tar.gz
    ````
 The `pluto` directory is now known for your system. So, you can continue to use the code. Check this example to make sure it works.
 
-* Change directory (`cd`) to the example's directory and follow
+* Change directory (`cd`) to the example's directory and follow the next commands
 ```sh
 cd $PLUTO_DIR/Test_Problems/HD/Sod
 ````
