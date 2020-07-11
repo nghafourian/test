@@ -39,7 +39,7 @@ Copy the file `pluto-4.3.tar.gz` that you previously downloaded to your home fol
 tar xvf pluto-4.3.tar.gz
 ````
 * Export the Pluto directory path:
-  * open the `.bashrc` file using `gedit` (or e.g. `vim`)
+  * open the `.bashrc` file using `gedit` (or e.g. `vim`). _if you do not have `gedit` installed, install it by command `sudo apt-get install gedit`and continue_
    ```sh
    sudo gedit ~/.bashrc 
    ````
