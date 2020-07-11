@@ -18,7 +18,7 @@ python2 --version
 You will see a result similar to the follwing, if you already have it.
 ![python2version](https://github.com/Shenavar/pics/blob/master/python.jpg)
 
-_note that the green words before `$` sign is directory address and what you see after `$` is the code._
+_note that everything before the `$` sign shows the user and directory address that I am working in, and what you see after `$` is the code. The `~` sign is a representative of the `home directory`_
 
 If `python2` is not installed on your system, you can install it using
 ```sh
