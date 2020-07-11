@@ -17,13 +17,14 @@ python2 --version
 ````
 You will see a result similar to the follwing, if you already have it.
 ![python2version](https://github.com/Shenavar/pics/blob/master/python.jpg)
+_note that the green words before `$` sign is directory address and what you see after `$` is the code._
 
-If not, you can install python2 using
+If `python2` is not installed on your system, you can install it using
 ```sh
 sudo apt install python-minimal
 ````
 
-Before continuing to the installation of `pluto`, install `gnuplot`. We will need it to plot our results. In your terminal window type 
+Before continuing to the installation of `pluto`, install `gnuplot`. We will need it later to plot our results. In your terminal window type 
 ```sh
 sudo apt-get install gnuplot
 ````
