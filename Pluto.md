@@ -47,9 +47,8 @@ tar xvf pluto-4.3.tar.gz
    ```sh
     export PLUTO_DIR=/home/user/PLUTO
    ````
-  * now type the follwing command in the terminal and press `Enter`.
-   ```shand select “Setup problem” from the main menu, see Fig. 1.2. You can choose (by pressing Enter)
-or modify the default setting using the arrow keys.
+  * now type the follwing commands in the terminal and press `Enter`.
+   ```sh
     . ~/.bashrc
    ````
    ```sh
