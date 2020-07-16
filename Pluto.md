@@ -117,7 +117,7 @@ NOTE 1: It might ask you to initialize `conda`. In this case, type `conda init` 
 
 NOTE 2: you can later deactivate `py2` environment by typing `conda deactivate` in the terminal.
 
-After creating and activating `py2` environment in your terminal, you need to install `scipy`,`numpy`, and `matplotlib` in this environment (`py2`). To do so you can follow [this guide](https://phoenixnap.com/kb/install-numpy) , or in `Ubuntu/MInt` follow these steps:
+After creating and activating `py2` environment in your terminal, you need to install `scipy`,`numpy`, and `matplotlib` in this environment (`py2`). To do so, you can follow [this guide](https://phoenixnap.com/kb/install-numpy) , or in `Ubuntu/MInt` follow these steps:
 * Activate py2 environment:
  ```sh
  conda activate py2
