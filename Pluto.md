@@ -206,7 +206,7 @@ You will see something like this:
 
 ![plotcode](https://github.com/Shenavar/pics/blob/master/2n.png)
 
-![plot](https://github.com/Shenavar/pics/blob/master/3n.png)
+![plotplot](https://github.com/Shenavar/pics/blob/master/3n.png)
 
 
 
