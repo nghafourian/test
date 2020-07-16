@@ -24,7 +24,7 @@ If `python2` is not installed on your system, you have two options. you can inst
 ```sh
 sudo apt-get install python-minimal
 ````
-or you can activate a new environment (`py2`) with `python 2.7` and continue, as you will see in the next section (`pyPLUTO`). 
+or you can activate a new environment (`py2`) with `python 2.7` and continue, as you will see in the next section (**pyPLUTO**). 
 
 
 Before continuing to the installation of `pluto`, install `gnuplot`. We will need it later to plot our results. In your terminal window type 
