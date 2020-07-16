@@ -200,6 +200,10 @@ axis([0.0,1.0,-0.2,1.2])
 savefig('sod_1.pdf')
 show()
 ````
+You will see something like this:
+![py2-python-import](https://github.com/Shenavar/pics/blob/master/1n.png)
+![plotcode](https://github.com/Shenavar/pics/blob/master/2n.png)
+![plot](https://github.com/Shenavar/pics/blob/master/3n.png)
 
 
 
