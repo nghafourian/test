@@ -101,9 +101,9 @@ You should now see the results if everything is working fine.
 ### py2 environment and the requirements for pyPLUTO
 Basically, you should be able to use `PLUTO` and `pyPLUTO` with any of the `python` versions (python2 or python3). However, in our experience, it only works with python2. So, you can create a second environment *(py2)* with `python2` (version 2.7). This is easy to do following [This guide](https://docs.anaconda.com/anaconda/user-guide/tasks/switch-environment/). 
 
-NOTE 1: *You still need the free internet (e.g. you can use lantern if you are in Iran) as mentioned in the above manual.*
+NOTE 1: You still need the free internet (e.g. you can use lantern if you are in Iran) as mentioned in the above manual.
 
-NOTE 2: *You do not need to create py3 environment*. 
+NOTE 2: You do not need to create py3 environment. 
 
 In `Ubuntu/Mint` you can use the following command in the terminal.:
 ```sh
@@ -115,7 +115,7 @@ conda activate py2
 ````
 NOTE 1: It might ask you to initialize `conda`. In this case, type `conda init` in terminal and `Enter`. Then activate `py2`.
 
-NOTE 2: you can later deactivate `p2` environment with typing `conda deactivate` in the terminal.
+NOTE 2: you can later deactivate `py2` environment by typing `conda deactivate` in the terminal.
 
 After creating and activating `py2` environment in your terminal, you need to install `scipy`,`numpy`, and `matplotlib` in this environment (`py2`). To do so you can follow [this guide](https://phoenixnap.com/kb/install-numpy) , or in `Ubuntu/MInt` follow these steps:
 * Activate py2 environment:
