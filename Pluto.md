@@ -126,7 +126,7 @@ After creating and activating `py2` environment in your terminal, you need to in
  ```sh
  python --version
  ````
-![plotplot](https://github.com/Shenavar/pics/blob/master/3n.png) 
+![plotplot](https://github.com/Shenavar/pics/blob/master/n4.png) 
 * install `pip` for python2:
  ```sh
  sudo apt install python-pip
