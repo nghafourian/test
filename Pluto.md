@@ -20,10 +20,12 @@ You will see a result similar to the follwing, if you already have it.
 
 _note that everything before the `$` sign shows the user and directory address that I am working in, and what you see after `$` is the code. The `~` sign is a representative of the `home directory`_
 
-If `python2` is not installed on your system, you can install it using
+If `python2` is not installed on your system, you have two options. you can install it using
 ```sh
 sudo apt-get install python-minimal
 ````
+or you can activate a new environment (`py2`) with `python 2.7` and continue, as you will see in the next section (`pyPLUTO`). 
+
 
 Before continuing to the installation of `pluto`, install `gnuplot`. We will need it later to plot our results. In your terminal window type 
 ```sh
