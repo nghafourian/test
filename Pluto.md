@@ -93,7 +93,8 @@ You should now see the results if everything is working fine.
 
 ## Installation of pyPLUTO as a tool for PLUTO code
 
-*Here we assume you have already installed `Anaconda3` using the ([Anaconda manual](https://github.com/Shenavar/Anaconda-Installation.md/blob/master/Anaconda Installation.md)).*
+*Here we assume you have already installed `Anaconda3` using the 
+([Anaconda manual](https://github.com/Shenavar/Anaconda-Installation.md/blob/master/Anaconda-Installation.md)).*
 
 ### py2 environment and the requirements for pyPLUTO
 Basically, you should be able to use `PLUTO` and `pyPLUTO` with any of the `python` versions (python2 or python3). However, in our experience, it only works with python2. So, you can create a second environment *(py2)* with `python2` (version 2.7). This is easy to do following [This guide](https://docs.anaconda.com/anaconda/user-guide/tasks/switch-environment/). NOTE: *you do not need to create py3 environment*. In `Ubuntu/Mint` you can use the following command in the terminal:
