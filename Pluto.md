@@ -133,7 +133,36 @@ Now we are ready to install `pyPLUTO`.
 
 ### pyPLUTO installation:
 
-One of the tools you could use for`PLUTO` is `pyPLUTO`, the source code of which is included in the `PLUTO` directory that you installed in the previous section. To see the the `pyPLUTO` manual, open the PLUTO directory that you created on your own system and then go the `Doc` folder. For example, on my system I have something like `/home/neda/PLUTO/Doc`. Now open the file `pyPLUTO.html`.
+One of the tools you could use for`PLUTO` is `pyPLUTO`, the source code of which is included in the `PLUTO` directory that you installed in the previous section. To see the the `pyPLUTO` manual, open the PLUTO directory that you created on your own system and then go the `Doc` folder. For example, on my system I have something like `/home/neda/PLUTO/Doc`. Now open the file `pyPLUTO.html`and go to **GETTING STARTED --> Installation** and follow the second (recommended) method as we state here.
+* Create a directory to store the pyPLUTO modules. For example I create this directory on my home directory.
+```sh
+cd \home\neda
+```
+```sh
+mkdir MyPython_Modules
+````
+* Go back to the pyPLUTO directory:
+```sh
+ cd $PLUTO_DIR/Tools/pyPLUTO
+```
+* Install the code in the directory created : 
+```sh
+python setup.py install --prefix=<path to MyPython_Modules>
+````
+e.g. in my case I will have `python setup.py install --prefix=\home\neda\MyPython_Modules`.
+
+* Then append the following in your .bashrc:
+ open the file with command `gedit ~/.bashrc`. Go to the end of the file and add the following and save the file
+```sh
+export PYTHONPATH =<path to MyPython_Modules>/lib/python<ver>/site-packages
+````
+where <ver> is the python version which the user have used to install the package. e.g. in my case I want to work with python2.7 and I will write `export PYTHONPATH="/home/neda/MyPython_Modules/lib/python2.7/site-packages"` and also
+```sh
+export PATH =<path to MyPython_Modules>/bin:$PATH
+````
+e.g. in my case `PATH="/home/neda/MyPython_Modules/bin:$PATH"`.
+
+
 
 
 
