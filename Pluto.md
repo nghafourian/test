@@ -126,6 +126,7 @@ After creating and activating `py2` environment in your terminal, you need to in
  ```sh
  python --version
  ````
+![plotplot](https://github.com/Shenavar/pics/blob/master/3n.png) 
 * install `pip` for python2:
  ```sh
  sudo apt install python-pip
@@ -144,7 +145,7 @@ Now we are ready to install `pyPLUTO`.
 
 ### pyPLUTO installation:
 
-One of the tools you could use for`PLUTO` is `pyPLUTO`, the source code of which is included in the `PLUTO` directory that you installed in the previous section. To see the the `pyPLUTO` manual, open the PLUTO directory that you created on your own system and then go the `Doc` folder. For example, on my system I have something like `/home/neda/PLUTO/Doc`. Now open the file `pyPLUTO.html`and go to **GETTING STARTED --> Installation** and follow the second (recommended) method as we state here.
+One of the tools you could use for`PLUTO` is `pyPLUTO`, the source code of which is included in the `PLUTO` directory that you installed in the previous section. To see the the `pyPLUTO` manual, open the PLUTO directory that you created on your own system and then go the `Doc` folder. For example, on my system I have something like `/home/neda/PLUTO/Doc`. Now open the file `pyPLUTO.html`and go to **GETTING STARTED --> Installation** and follow the second (recommended) method as we state here:
 * Create a directory to store the pyPLUTO modules. For example I create this directory on my home directory.
 ```sh
 cd \home\neda
