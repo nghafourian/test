@@ -129,7 +129,7 @@ After creating and activating `py2` environment in your terminal, you need to in
 ![plotplot](https://github.com/Shenavar/pics/blob/master/n4.png) 
 * install `pip` for python2:
  ```sh
- sudo apt install python-pip
+ sudo apt-get install python-pip
  ````
  * Use `pip` to install SciPy, NumPy and matplotlib:
  ```sh
