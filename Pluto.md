@@ -170,7 +170,7 @@ e.g. in my case I will have `python setup.py install --prefix=/home/neda/MyPytho
 ```sh
 export PYTHONPATH =<path to MyPython_Modules>/lib/python<ver>/site-packages
 ````
-where <ver> is the python version which the user have used to install the package. e.g. in my case I want to work with python2.7 and I will write `export PYTHONPATH="/home/neda/MyPython_Modules/lib/python2.7/site-packages"` and also
+where **_< ver >_** is the python version which the user have used to install the package. e.g. in my case I want to work with python2.7 and I will write `export PYTHONPATH="/home/neda/MyPython_Modules/lib/python2.7/site-packages"` and also
 ```sh
 export PATH =<path to MyPython_Modules>/bin:$PATH
 ````
