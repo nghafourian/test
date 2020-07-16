@@ -163,7 +163,7 @@ mkdir MyPython_Modules
 ```sh
 python setup.py install --prefix=<path to MyPython_Modules>
 ````
-e.g. in my case I will have `python setup.py install --prefix=\home\neda\MyPython_Modules`.
+e.g. in my case I will have `python setup.py install --prefix=/home/neda/MyPython_Modules`.
 
 * Then append the following in your .bashrc:
  open the file with command `gedit ~/.bashrc`. Go to the end of the file and add the following two lines 
