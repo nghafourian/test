@@ -152,7 +152,7 @@ python setup.py install --prefix=<path to MyPython_Modules>
 e.g. in my case I will have `python setup.py install --prefix=\home\neda\MyPython_Modules`.
 
 * Then append the following in your .bashrc:
- open the file with command `gedit ~/.bashrc`. Go to the end of the file and add the following and save the file
+ open the file with command `gedit ~/.bashrc`. Go to the end of the file and add the following two lines 
 ```sh
 export PYTHONPATH =<path to MyPython_Modules>/lib/python<ver>/site-packages
 ````
@@ -160,8 +160,46 @@ where <ver> is the python version which the user have used to install the packag
 ```sh
 export PATH =<path to MyPython_Modules>/bin:$PATH
 ````
-e.g. in my case `PATH="/home/neda/MyPython_Modules/bin:$PATH"`.
+e.g. in my case `export PATH="/home/neda/MyPython_Modules/bin:$PATH"`. After adding these two lines save the file and close it.
 
+* type the following in your terminal and press `Enter`:
+```sh
+source ~\.bashrc
+````
+Your installation must be done. Now let's check it by running an example from the manual (`$PLUTO_DIR/Tools/pyPLUTO/doc/example.html#sod`). We will plot the results of the previous test of the `PLUTO` code (Sod example). 
+
+* open a terminal and activate `py2` environment:
+```sh
+conda activate py
+````
+* open python:
+```sh
+python
+````
+* Type the following commands:
+```python
+import os
+import sys
+from numpy import *
+from matplotlib.pyplot import *
+import pyPLUTO as pp
+
+plutodir = os.environ['PLUTO_DIR']
+wdir = plutodir+'/Test_Problems/HD/Sod/'
+nlinf = pp.nlast_info(w_dir=wdir)
+
+D = pp.pload(nlinf['nlast'],w_dir=wdir) # Loading the data into a pload object D.
+
+f1 = figure()
+ax1 = f1.add_subplot(111)
+plot(D.x1,D.rho,'r',D.x1,D.prs,'k',D.x1,D.vx1,'g')
+xlabel(r'x')
+ylabel(r'$\rho$ [red], P [black], $V_{\rm x}$ [green]')
+title(r'Sod shock Tube test')
+axis([0.0,1.0,-0.2,1.2])
+savefig('sod_1.pdf')
+show()
+````
 
 
 
