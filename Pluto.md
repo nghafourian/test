@@ -71,7 +71,7 @@ cp pluto_01.ini pluto.ini
 ````
 * Run the `python` script
 ```sh
-python $PLUTO_DIR/setup.py
+python2 $PLUTO_DIR/setup.py
 ````
  and select “Setup problem” from the main menu, see Fig. 1.2 of [documentiation file](http://plutocode.ph.unito.it/userguide.pdf). You can choose (by pressing Enter) or modify the default setting using the arrow keys.  
 * Continue pressing `Enter` and choosing your desired setup options. Once you return to the main menu, select `Change makefile`, choose a suitable makefile (for this basic installation in Linux choose `Linux.gcc.defs` option) and press enter.
