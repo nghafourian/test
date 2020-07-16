@@ -93,11 +93,47 @@ You should now see the results if everything is working fine.
 
 ## Installation of pyPLUTO as a tool for PLUTO code
 
+*Here we assume you have already installed `Anaconda 3` using the Anaconda manual. (LINK)*
+
+### py2 environment and the requirements for pyPLUTO
+Basically, you should be able to use `PLUTO` and `pyPLUTO` with any of the `python` versions (python2 or python3). However, in our experience, it only works with python2. So, as you can see in our `Anaconda` manual (*link to the anaconda manual*), you can create a second environment *(py2)* with `python2` (version 2.7). This is easy to do following [This guide](https://docs.anaconda.com/anaconda/user-guide/tasks/switch-environment/). NOTE: *you do not need to create py3 environment*. In `Ubuntu/Mint` you can use the following command in the terminal:
+```sh
+conda create --name py2 python=2.7
+````
+to activate `py2` in Linux:
+```sh
+conda activate py2
+````
+NOTE: you can later deactivate it with typing `conda deactivate` in the terminal.
+
+After creating and activating `py2` environment in your terminal, you need to install `scipy`,`numpy`, and `matplotlib` in this environment (`py2`). To do so you can follow [this guide](https://phoenixnap.com/kb/install-numpy) , or in `Ubuntu/MInt` follow these steps:
+* Activate py2 environment:
+ ```sh
+ conda activate py2
+ ````
+ * Check your python version. you should see a version of 2.7 python in this environment. 
+ ```sh
+ python --version
+ ````
+* install `pip` for python2:
+ ```sh
+ sudo apt install python-pip
+ ````
+ * Use `pip` to install SciPy, NumPy and matplotlib:
+ ```sh
+ pip install scipy
+````
+```sh
+pip install numpy
+````
+```sh
+pip install matplotlib
+````
+Now we are ready to install `pyPLUTO`. 
+
+### pyPLUTO installation:
+
 One of the tools you could use for`PLUTO` is `pyPLUTO`, the source code of which is included in the `PLUTO` directory that you installed in the previous section. To see the the `pyPLUTO` manual, open the PLUTO directory that you created on your own system and then go the `Doc` folder. For example, on my system I have something like `/home/neda/PLUTO/Doc`. Now open the file `pyPLUTO.html`.
 
-Basically, you should be able to use PLUTO and pyPLUTO with both python2 or python3. However, in our experience, it only worked with python2. So, as you can see in our `Anaconda` manual, you can create a second environment *(py2)* with `python2` (version 2.7). This is easy to do following [This guide](https://docs.anaconda.com/anaconda/user-guide/tasks/switch-environment/). NOTE: *you do not need to create py3 environment*. After creating and activating `py2` environment according to the mentioned manual, install `scipy`,`numpy`, and `matplotlib` in this environment. To do so, in `ubuntu` follow these steps:
 
- ```sh
- make
- ````
 
