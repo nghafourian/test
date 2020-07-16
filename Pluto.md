@@ -89,3 +89,15 @@ python $PLUTO_DIR/setup.py
  plot "data.0001.dbl" bin array=400:400:400 form="%double" ind 0
 ````
 You should now see the results if everything is working fine.
+
+
+## Installation of pyPLUTO as a tool for PLUTO code
+
+One of the tools you could use for`PLUTO` is `pyPLUTO`, the source code of which is included in the `PLUTO` directory that you installed in the previous section. To see the the `pyPLUTO` manual, open the PLUTO directory that you created on your own system and then go the `Doc` folder. For example, on my system I have something like `/home/neda/PLUTO/Doc`. Now open the file `pyPLUTO.html`.
+
+Basically, you should be able to use PLUTO and pyPLUTO with both python2 or python3. However, in our experience, it only worked with python2. So, as you can see in our `Anaconda` manual, you can create a second environment *(py2)* with `python2` (version 2.7). This is easy to do following [This guide](https://docs.anaconda.com/anaconda/user-guide/tasks/switch-environment/). NOTE: *you do not need to create py3 environment*. After creating and activating `py2` environment according to the mentioned manual, install `scipy`,`numpy`, and `matplotlib` in this environment. To do so, in `ubuntu` follow these steps:
+
+ ```sh
+ make
+ ````
+
