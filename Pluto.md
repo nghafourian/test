@@ -150,7 +150,7 @@ Now we are ready to install `pyPLUTO`.
 One of the tools you could use for`PLUTO` is `pyPLUTO`, the source code of which is included in the `PLUTO` directory that you installed in the previous section. To see the the `pyPLUTO` manual, open the PLUTO directory that you created on your own system and then go to the `Doc` folder. For example, on my system I have something like `/home/neda/PLUTO/Doc`. Now open the file `pyPLUTO.html`and go to **GETTING STARTED --> Installation** and follow the second (recommended) method as we state here:
 * Create a directory to store the pyPLUTO modules. For example I create this directory on my home directory.
 ```sh
-cd \home\neda
+cd /home/neda
 ```
 ```sh
 mkdir MyPython_Modules
@@ -178,7 +178,7 @@ e.g. in my case `export PATH="/home/neda/MyPython_Modules/bin:$PATH"`. After add
 
 * type the following in your terminal and press `Enter`:
 ```sh
-source ~\.bashrc
+source ~/.bashrc
 ````
 Your installation must be done. Now let's check it by running an example from the manual (`$PLUTO_DIR/Tools/pyPLUTO/doc/example.html#sod`). We will plot the results of the previous test of the `PLUTO` code (Sod example). 
 
