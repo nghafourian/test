@@ -1,7 +1,9 @@
 # Pluto
 ## A simple guide for installation on GNU/Linux OS (ubuntu based distros)
 
-Download the source code from [Pluto's main page](http://plutocode.ph.unito.it/download.html). You need to provide your information and click submit for the `.tar.gz` source file start downloading. The minimum prerequisites to use this code are `C Compiler`, `GNU make`, and `Python`.
+Download the source code from [Pluto's main page](http://plutocode.ph.unito.it/download.html). You need to provide your information and click submit for the `.tar.gz` source file to start downloading. (Please note that we found a typo in the official code v. 4.3. that causes problem for it to work with python 3.x. We have prepared a [fix](codes/patch_define_problem) that solves this issue. You can download this fixed version from [here](https://github.com/astrofum/na2020/raw/master/codes/PLUTO.tar.gz). This should let you to use python 3.x for working with Pluto. You can also continue reading to use python 2.7)
+
+The minimum prerequisites to use this code are `C Compiler`, `GNU make`, and `Python`.
 Open a terminal by using `Alt+Ctrl+t` and type
 
 ```sh
@@ -101,7 +103,7 @@ You should now see the results if everything is working fine.
 
 
 ### py2 environment and the requirements for pyPLUTO
-Basically, you should be able to use `PLUTO` and `pyPLUTO` with any of the `python` versions (python2 or python3). However, in our experience, it only works with python2. So, you can create a second environment *(py2)* with `python2` (version 2.7). This is easy to do following [This guide](https://docs.anaconda.com/anaconda/user-guide/tasks/switch-environment/). 
+Basically, you should be able to use `PLUTO` and `pyPLUTO` with `python2` version (please see the very beginning of this manual to see how can you work with Pluto using `python3.x`. We have also prepared a [fork](https://github.com/astrofum/pyPLUTO) of pyPluto that should work with python 3.x). So, you can create a second environment *(py2)* with `python2` (version 2.7) in your installed Anaconda. This is easy to do following [this guide](https://docs.anaconda.com/anaconda/user-guide/tasks/switch-environment/). 
 
 NOTE 1: You still need the free internet (e.g. you can use lantern if you are in Iran) as mentioned in the [Anaconda manual](https://github.com/Shenavar/Anaconda-Installation.md/blob/master/Anaconda%20Installation.md).
 
